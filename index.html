@@ -7,21 +7,22 @@
 
 <body>
   <button id="btn">soy un boton de ejemplo</button>
-  <script>
-    // la parte interesante 
+</body>
+<script>
+  // la parte interesante 
 
-    function createParagraph() {
-      let para = document.createElement('p');
-      para.textContent = 'el ejemplo funciona! :D'; // colocar el texto
-      document.getElementById('btn').disabled = true; // desactivar el boton al hacer clic
-      document.body.appendChild(para);
-    }
+  function createParagraph() {
+    let para = document.createElement('p');
+    para.textContent = 'el ejemplo funciona! :D'; // colocar el texto
+    document.getElementById('btn').disabled = true; // desactivar el boton al hacer clic
+    document.body.appendChild(para);
+  }
 
-    const buttons = document.querySelectorAll("button"); // activar los botones
+  const buttons = document.querySelectorAll("button"); // activar los botones
 
-    for (let i = 0; i < buttons.length; i++) {
-      buttons[i].addEventListener('click', createParagraph);
-    }
-  </script>
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', createParagraph);
+  }
+</script>
 
 </html>
